@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id ='view_teachers_form' model="ir.ui.view">
+        <field name="name">teachers.view.form</field>
+        <field name="model">teachers.managment</field>
+        <field name="arch" type ="xml" >
+            <form>
+                <sheet>
+                     <group>
+                            <field name ="name"/>
+                            <field name ="age"/>
+                            <field name ="desciption"/>
+                            <field name ="is_student"/>
+                            <field name ="gender" widget="radio"/>
+                            <field name ="upload_image"/>
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id ='teachers_view__tree' model="ir.ui.view">
+            <field name="name">teachers.view.tree</field>
+            <field name="model">teachers.managment</field>
+            <field name="arch" type="xml">
+                   <tree>
+                       <field name ="name"/>
+                       <field name ="age"/>
+                       <field name ="desciption"/>
+                       <field name ="is_student"/>
+                       <field name ="gender"/>
+                       <field name ="upload_image"/>
+                    </tree>
+            </field>
+     </record>
+
+    <record id="actions_teachers_view" model="ir.actions.act_window">
+        <field name="name">teachers Managment</field>
+        <field name ="res_model">teachers.managment</field>
+        <field name ="view_mode">tree,form</field>
+    </record>
+
+<!--    <menuitem id ="upward_menu"-->
+<!--              name ="upward_menu"-->
+<!--              sequence="1"/>-->
+
+<!--     <menuitem id ="teachers_main_menu"-->
+<!--              name ="teachers"-->
+<!--              sequence="1"-->
+<!--               parent="upward_menu"-->
+<!--                action="actions_teachers_view"/>-->
+
+
+
+
+</odoo>
+

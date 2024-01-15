@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem id ="upward_menu"
+              name ="Upward Project"
+              sequence="1"/>
+
+
+    <menuitem id ="teachers_main_menu"
+              name ="Teachers"
+              sequence="1"
+               parent="upward_menu"
+                action="actions_teachers_view"/>
+
+    <menuitem id ="student_managment"
+              name ="Student"
+              sequence="2"
+              parent="upward_menu"/>
+
+    <menuitem id="course_menu"
+                  name="Courses "
+                  sequence="3"
+                  parent="upward_menu"
+                  action="courses_action_view"/>
+
+
+
+    <menuitem id ="students_menu"
+              name ="students.."
+              sequence="1"
+              parent="student_managment"
+              action="actions_students_view"/>
+</odoo>

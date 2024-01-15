@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id ='view_students_form' model="ir.ui.view">
+        <field name="name">students.view.form</field>
+        <field name="model">students.managment</field>
+        <field name="arch" type ="xml" >
+            <form>
+                <sheet>
+                     <group>
+
+                            <field name ="first_name"/>
+                            <field name ="last_name"/>
+                            <field name ="birth_date"/>
+                            <field name ="age"/>
+                            <field name ="subjects"/>
+
+                     </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <record id ='view_students_tree' model="ir.ui.view">
+            <field name="name">students.view.tree</field>
+            <field name="model">students.managment</field>
+            <field name="arch" type="xml">
+                   <tree>
+                       <field name ="first_name"/>
+                       <field name ="last_name"/>
+                       <field name ="birth_date"/>
+                       <field name ="age"/>
+                       <field name ="subjects"/>
+                   </tree>
+            </field>
+     </record>
+
+    <record id="actions_students_view" model="ir.actions.act_window">
+        <field name="name">students Managment</field>
+        <field name ="res_model">students.managment</field>
+        <field name ="view_mode">tree,form</field>
+    </record>
+
+<!--    <menuitem id ="student_managment"-->
+<!--              name ="student"-->
+<!--              sequence="2"-->
+<!--              parent="upward_menu"/>-->
+
+
+<!--    <menuitem id ="students_menu"-->
+<!--              name ="students.."-->
+<!--              sequence="1"-->
+<!--              parent="student_managment"-->
+<!--              action="actions_students_view"/>-->
+
+
+
+</odoo>
+
