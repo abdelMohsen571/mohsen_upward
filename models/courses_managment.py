@@ -13,4 +13,7 @@ class CoursesManagment(models.Model):
     teacher_id=fields.Many2one('teachers.managment',string='Instructor')
     hours=fields.Float(sring='courses hours',digits='4digit', help='how many hours for this course')
     student_id=fields.Many2one('students.managment',string='Select Students')
+    mohsen =fields.Char(string='Course Name' ,required=1)
+    kkk =fields.Char(string='Course Name' ,required=1)
+    fd=fields.Char(string='Course Name' ,required=1)
 
