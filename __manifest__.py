@@ -27,6 +27,7 @@
         'views/students_view.xml',
         'views/teachers_view.xml',
         'views/course_view.xml',
+        'views/classroom_view.xml',
         'views/menu_items_view.xml',
     ],
     'installable': True,

@@ -7,12 +7,12 @@
             <form>
                 <sheet>
                      <group>
-
+                            <button name="compute_course_students" type="object" string="print"/>
                             <field name ="first_name"/>
                             <field name ="last_name"/>
                             <field name ="birth_date"/>
-                            <field name ="age"/>
-                            <field name ="subjects"/>
+<!--                            <field name ="age"/>-->
+<!--                            <field name ="subjects"/>-->
 
                      </group>
                 </sheet>
@@ -28,8 +28,8 @@
                        <field name ="first_name"/>
                        <field name ="last_name"/>
                        <field name ="birth_date"/>
-                       <field name ="age"/>
-                       <field name ="subjects"/>
+<!--                       <field name ="age"/>-->
+<!--                       <field name ="subjects"/>-->
                    </tree>
             </field>
      </record>

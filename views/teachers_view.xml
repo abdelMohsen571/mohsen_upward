@@ -12,6 +12,8 @@
                             <field name ="desciption"/>
                             <field name ="is_student"/>
                             <field name ="gender" widget="radio"/>
+                            <field name ="joning_date"/>
+                            <field name ="years_of_experience"/>
                             <field name ="upload_image"/>
                      </group>
                 </sheet>

@@ -29,4 +29,10 @@
               sequence="1"
               parent="student_managment"
               action="actions_students_view"/>
+
+    <menuitem id ="classroom_menu"
+              name ="Classroom"
+              sequence="1"
+              parent="upward_menu"
+              action="actions_classroom_view"/>
 </odoo>
